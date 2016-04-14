@@ -1,0 +1,32 @@
+{
+  
+  "20160326":[
+    {"time-start": "00:25", "type": "telecast", "title": "\"Городские пижоны\". Премьера. \"Мастроянни - идеальный итальянец\""},
+    {"time-start": "01:30", "type": "telecast", "title": "\"Городские пижоны\". \"Билли Джоэл. Окно в Россию\""},
+    {"time-start": "03:00", "type": "movie",    "title": "\"После школы\". Многосерийный фильм "}
+    {"time-start": "03:55", "type": "movie",    "title": "Дольф Лундгрен в фильме \"Ликвидатор\""},
+    {"time-start": "05:25", "type": "telecast", "title": "Контрольная закупка"},
+    {"time-start": "06:00", "type": "telecast", "title": "Новости"},
+    {"time-start": "06:10", "type": "tv-series", "title": "Парфюмерша"},
+    {"time-start": "08:00", "type": "telecast", "title": "Играй, гармонь любимая!"},
+    {"time-start": "08:45", "type": "movie",    "title": "Смешарики. Новые приключения"},
+    {"time-start": "09:00", "type": "telecast", "title": "Умницы и умники"},
+    {"time-start": "09:45", "type": "telecast", "title": "Слово пастыря"},
+    {"time-start": "10:00", "type": "telecast", "title": "Новости с субтитрами"},
+    {"time-start": "10:15", "type": "telecast", "title": "Смак"},
+    {"time-start": "10:55", "type": "telecast", "title": "Тело государственной важности. Подлинная история Красной королевы"},
+    {"time-start": "12:00", "type": "telecast", "title": "Новости с субтитрами"},
+    {"time-start": "12:15", "type": "telecast", "title": "Идеальный ремонт"},
+    {"time-start": "13:10", "type": "telecast", "title": "На 10 лет моложе"},
+    {"time-start": "14:00", "type": "telecast", "title": "Теория заговора"},
+    {"time-start": "15:00", "type": "telecast", "title": "Новости с субтитрами"},
+    {"time-start": "15:15", "type": "telecast", "title": "Валентина Талызина. Время не лечит" },
+    {"time-start": "16:10", "type": "telecast", "title": "Голос. Дети"},
+    {"time-start": "18:00", "type": "telecast", "title": "\"Кто хочет стать миллионером?\" с Дмитрием Дибровым"},
+    {"time-start": "19:00", "type": "sport", "title": "Футбол. Товарищеский матч. Сборная России - сборная Литвы. Прямой эфир"},
+    {"time-start": "21:00", "type": "telecast", "title": "Время"},
+    {"time-start": "21:20", "type": "telecast", "title": "\"Сегодня вечером\" с Андреем Малаховым"},
+    {"time-start": "23:00", "type": "telecast", "title": "Подмосковные вечера" },
+    {"time-start": "23:55", "type": "movie",    "title": "Премьера. \"Версаль\". Многосерийный фильм. 7-8 серии"}
+  ]
+ }

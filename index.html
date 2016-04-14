@@ -6,261 +6,107 @@
 	</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body ng-app="App" ng-controller="AppCtrl" ng-cloak>
 	<div class="article">
-		<div class="section section-tvplan">
-			<h2 class="section-header">Понедельник</h2>
-			<div class="tvplan section-content ">
-				<ul class="channel-column">
-					<li class="channel-tile channel-tile_header channel-tile_header_1channel">
-						<!-- <img class="channel-logo" src="assets/svg/1channel.svg"> -->
-						<div class="channel-logo channel-logo_1ch"></div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм Самый лучший фильм Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-				</ul>
-				<ul class="channel-column">
-					<li class="channel-tile channel-tile_header channel-tile_header_1channel">
-						<!-- <img class="channel-logo" src="assets/svg/1channel.svg"> -->
-						<div class="channel-logo channel-logo_1ch"></div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм Самый лучший фильм Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-				</ul>
-				<ul class="channel-column">
-					<li class="channel-tile channel-tile_header channel-tile_header_1channel">
-						<!-- <img class="channel-logo" src="assets/svg/1channel.svg"> -->
-						<div class="channel-logo channel-logo_1ch"></div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм Самый лучший фильм Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм Самый лучший фильм Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм Самый лучший фильм Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-				</ul>
-				<ul class="channel-column debug debug_full-debug">
-					<li class="channel-tile channel-tile_header channel-tile_header_1channel">
-						<!-- <img class="channel-logo" src="assets/svg/1channel.svg"> -->
-						<div class="channel-logo channel-logo_1ch"></div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм Самый лучший фильм Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм Самый лучший фильм Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li><li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-				</ul>
-				<ul class="channel-column">
-					<li class="channel-tile channel-tile_header channel-tile_header_1channel">
-						<!-- <img class="channel-logo" src="assets/svg/1channel.svg"> -->
-						<div class="channel-logo channel-logo_1ch"></div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм Самый лучший фильм Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-					<li class="channel-tile cast-tile">
-						<div class="cast-tile__icon"></div>
-						<div class="cast-tile__time">XX:XX</div>
-						<div class="cast-tile__type">Фильм</div>
-						<div class="cast-tile__title">Самый лучший фильм</div>
-						<div class="cast-tile__details"> Details</div>
-					</li>
-				</ul>
-			</div>						
-		</div>
-		<div class="section section-tvplan debug">
-			<h2 class="section-header">Вторник</h2>
-			<div class="tvplan section-content debug">
-				<div class="tv1 channel-column debug">
+		<div class="section section-tvplan" ng-repeat="dayDate in ['2016-03-21', '2016-03-22', '2016-03-23', '2016-03-24', '2016-03-25', '2016-03-26', '2016-03-27']">
 
-				</div>
-			</div>			
+			<h2 class="section-header">
+					{{date(dayDate) | date:'EEEE (dd.MM.yyyy)'|uppercase}}
+			</h2>
+
+			<div class="tvplan section-content ">
+
+				<!-- <ul class="channel-column debug1 debug_full-debug1" ng-repeat="channelId in ['1channel', 'tnt', 'ren-tv', 'rtr', '5channel'] track by $index"> -->
+				<ul class="channel-column debug1 debug_full-debug1" ng-repeat="channelId in ['1channel', '1channel', '1channel', '1channel', '1channel'] track by $index">
+					<li class="channel-tile channel-tile_header " ng-class="'channel-tile_header_'+channelId">
+						<div class="channel-logo" ng-class="'channel-logo_'+channelId"></div>
+					</li>
+					<li class="channel-tile "
+						cast-tile
+						cast-time="cast['time']"
+						cast-type="cast.type"
+						cast-title="cast.title"
+						cast-details="'Cast Details'"
+						ng-repeat="cast in channelCasts[channelId][dayDate] | orderBy:'time'"></li>
+
+				</ul>
+
+			</div>
 		</div>
 	</div>
+
+	<script src="/js/angular.min.js"></script>
+	<script src="/js/angular-locale_ru-ru.js"></script>
+
+	<script type="text/javascript">
+		;(function () {
+			angular.module('App', [])
+				.constant('CAST_TYPES', {
+					'movie': 'Фильм',
+					'sport': 'Спорт',
+					'tv-series': 'Телесериал',
+					'telecast': 'Телепередача'
+				})
+				.controller('AppCtrl', AppController)
+				.directive('castTile', CastTileDirective);
+
+			AppController.$inject = ['$scope', '$http', 'CAST_TYPES'];
+			function AppController($scope, $http, CAST_TYPES) {
+				$scope.channelCasts = {};
+
+				$http({
+					method:'GET',
+					url: '/api/tv-casts/1channel.json'
+				}).then(
+					function (res) {
+						// debugger
+						$scope.channelCasts['1channel'] = res.data;
+					}
+				);
+
+				$scope.date = function(v){
+					return Date.parse(v);
+				}
+
+
+			}
+
+
+			CastTileDirective.$inject = ['CAST_TYPES'];
+			function CastTileDirective(CAST_TYPES) {
+				return {
+					restrict: 'A',
+					templateUrl: '/tmpl/cast-tile.html',
+					scope: {
+						castTitle: '=',
+						castTime: '=',
+						castType: '=',
+						castDetails: '='
+					},
+					link: function (scope, el, attrs) {
+						el[0].classList.add('cast-tile');
+
+						scope.castTypeTitle = function (type) {
+							return CAST_TYPES[type] || type;
+						}
+					}
+				}
+			}
+		}())
+	</script>
+
+	<script type="text/ng-template" id="/tmpl/cast-tile.html">
+		<!--div class="cast-tile__icon"></div-->
+		<div class="cast-tile__icon-wrapper">
+			<img src="/assets/svg/movie.svg" class="cast-tile__icon" ng-if="castType == 'movie'"/>
+			<img src="/assets/svg/sport.svg" class="cast-tile__icon" ng-if="castType == 'sport'"/>
+			<img src="/assets/svg/video.svg" class="cast-tile__icon" ng-if="castType == 'tv-series'"/>
+			<img src="/assets/svg/telecast.svg" class="cast-tile__icon" ng-if="castType == 'telecast'"/>
+		</div>
+		<div class="cast-tile__time">{{castTime}}</div>
+		<div class="cast-tile__title">{{castTitle}}</div>
+		<!--div class="cast-tile__type">{{castTypeTitle(castType)}}</div-->
+		<div class="cast-tile__details">{{castDetails}}</div>
+	</script>
 </body>
 </html>
