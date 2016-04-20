@@ -1,0 +1,24 @@
+{
+  "name": "shri-msk-2016-task1",
+  "homepage": "https://github.com/bannikov-info/shri-msk-2016-task1",
+  "authors": [
+    "Bannikov Evgeny <bannikov.evgeny@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-touch": "~1.5.5",
+    "angular-i18n": "~1.5.5",
+    "ng-lorem": "~0.0.1",
+    "angular": "~1.5.5"
+  }
+}

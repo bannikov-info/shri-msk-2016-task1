@@ -1,0 +1,50 @@
+@media (max-width: 320px) {
+
+.media-mobile{
+    display: block;
+}
+
+body{
+    background-color: lightyellow;
+    /*width: 1400px;*/
+    width: 100%;
+    /*overflow-x: hidden;*/
+}
+
+.article{
+    width: 100%;
+}
+.article-content{
+    width: 100%;
+    overflow: hidden;
+}
+
+.section-tvplan{
+    width: auto;
+    /*display: block;*/
+    /*overflow-x: hidden;*/
+}
+
+.channel-column{
+    min-width: 288px;
+    width: 288px;
+    /*display: block;*/
+    /*float: left;*/
+}
+
+.cast-tile{
+    border: 1px solid rgba(170, 170, 170, 0.5);
+    border-top: 0;
+}
+
+.cast-tile:hover .cast-tile__details,
+.cast-tile.hv .cast-tile__details{
+    display: none;
+}
+
+.swipe-animate {
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s;
+}
+
+}

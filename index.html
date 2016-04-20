@@ -1,99 +1,78 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 	<title>
 
 	</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-mobile.css">
 </head>
 <body ng-app="App" ng-controller="AppCtrl" ng-cloak>
-	<div class="article">
-		<div class="section section-tvplan" ng-repeat="dayDate in ['2016-03-21', '2016-03-22', '2016-03-23', '2016-03-24', '2016-03-25', '2016-03-26', '2016-03-27']">
+	<div class="media-mobile typo_body_2">
+		<p>
+			media mobile w:{{:: viewPort.w}}
+		</p>
+		<p>
+			{{logMsg}}
+		</p>
+	</div>
+	<div class="article" >
+		<div class="article-content debug debug_full-debug"
+			 ng-repeat1="dayDate in ['2016-03-21', '2016-03-22', '2016-03-23', '2016-03-24', '2016-03-25', '2016-03-26', '2016-03-27']"
+			 ng-repeat="dayDate in ['2016-03-21']"
+			 >
+			<div class="section section-tvplan"
+				 ng-swipe-horizontal="[0, -282, -590, -898, -1184]">
 
-			<h2 class="section-header">
+				<h2 class="section-header typo_display_1">
 					{{date(dayDate) | date:'EEEE (dd.MM.yyyy)'|uppercase}}
-			</h2>
+				</h2>
 
-			<div class="tvplan section-content ">
+				<div class="tvplan section-content ">
 
-				<!-- <ul class="channel-column debug1 debug_full-debug1" ng-repeat="channelId in ['1channel', 'tnt', 'ren-tv', 'rtr', '5channel'] track by $index"> -->
-				<ul class="channel-column debug1 debug_full-debug1" ng-repeat="channelId in ['1channel', '1channel', '1channel', '1channel', '1channel'] track by $index">
-					<li class="channel-tile channel-tile_header " ng-class="'channel-tile_header_'+channelId">
-						<div class="channel-logo" ng-class="'channel-logo_'+channelId"></div>
-					</li>
-					<li class="channel-tile "
+					<!-- <ul class="channel-column debug1 debug_full-debug1" ng-repeat="channelId in ['1channel', 'tnt', 'ren-tv', 'rtr', '5channel'] track by $index"> -->
+					<ul class="channel-column debug1 debug_full-debug1" ng-repeat="channelId in ['1channel', '1channel', '1channel', '1channel', '1channel'] track by $index" >
+						<li class="channel-tile channel-tile_header " ng-class="'channel-tile_header_'+channelId">
+							<div class="channel-logo" ng-class="'channel-logo_'+channelId"></div>
+						</li>
+						<li class="channel-tile "
 						cast-tile
 						cast-time="cast['time']"
 						cast-type="cast.type"
 						cast-title="cast.title"
 						cast-details="'Cast Details'"
-						ng-repeat="cast in channelCasts[channelId][dayDate] | orderBy:'time'"></li>
+						ng-repeat="cast in channelCasts[channelId][dayDate] | orderBy:'time'">
+						<div class="cast-tile__details">
+							<div class="cast-tile__details-header card-header card-header_media_right">
+								<div class="card-header__media">
+									<!-- <img src="http://lorempixel.com/image_output/people-q-c-80-80-8.jpg" class="header-media__image" ng-if="cast.type == 'movie'"/>
+									<img src="http://lorempixel.com/image_output/sports-q-c-80-80-7.jpg" class="header-media__image" ng-if="cast.type == 'sport'"/>
+									<img src="http://lorempixel.com/image_output/abstract-q-c-80-80-5.jpg" class="header-media__image" ng-if="cast.type == 'tv-series'"/>
+									<img src="http://lorempixel.com/image_output/cats-q-c-80-80-3.jpg" class="header-media__image" ng-if="cast.type == 'telecast'"/> -->
+								</div>
+								<div class="card-header__subtitle typo_subheading">{{castTypeTitle(cast.type)}}</div>
+								<h3 class="card-header__title typo_title">{{cast.title}}</h3>
+							</div>
+							<div class="typo_body_1 card-content">
+								<lorem-ipsum words="40"></lorem-ipsum>
+							</div>
+							<div class="typo_button card-actions">
+								{{date(dayDate) | date:'dd.MM.yyyy'|uppercase}} {{cast.time}}
+							</div>
+						</div>
+					</li>
 
 				</ul>
 
 			</div>
 		</div>
+		</div>
 	</div>
 
-	<script src="/js/angular.min.js"></script>
-	<script src="/js/angular-locale_ru-ru.js"></script>
+	<script src="/dist/vendor.min.js"></script>
 
-	<script type="text/javascript">
-		;(function () {
-			angular.module('App', [])
-				.constant('CAST_TYPES', {
-					'movie': 'Фильм',
-					'sport': 'Спорт',
-					'tv-series': 'Телесериал',
-					'telecast': 'Телепередача'
-				})
-				.controller('AppCtrl', AppController)
-				.directive('castTile', CastTileDirective);
-
-			AppController.$inject = ['$scope', '$http', 'CAST_TYPES'];
-			function AppController($scope, $http, CAST_TYPES) {
-				$scope.channelCasts = {};
-
-				$http({
-					method:'GET',
-					url: '/api/tv-casts/1channel.json'
-				}).then(
-					function (res) {
-						// debugger
-						$scope.channelCasts['1channel'] = res.data;
-					}
-				);
-
-				$scope.date = function(v){
-					return Date.parse(v);
-				}
-
-
-			}
-
-
-			CastTileDirective.$inject = ['CAST_TYPES'];
-			function CastTileDirective(CAST_TYPES) {
-				return {
-					restrict: 'A',
-					templateUrl: '/tmpl/cast-tile.html',
-					scope: {
-						castTitle: '=',
-						castTime: '=',
-						castType: '=',
-						castDetails: '='
-					},
-					link: function (scope, el, attrs) {
-						el[0].classList.add('cast-tile');
-
-						scope.castTypeTitle = function (type) {
-							return CAST_TYPES[type] || type;
-						}
-					}
-				}
-			}
-		}())
-	</script>
+	<script src="/js/app.js"></script>
 
 	<script type="text/ng-template" id="/tmpl/cast-tile.html">
 		<!--div class="cast-tile__icon"></div-->
@@ -103,10 +82,10 @@
 			<img src="/assets/svg/video.svg" class="cast-tile__icon" ng-if="castType == 'tv-series'"/>
 			<img src="/assets/svg/telecast.svg" class="cast-tile__icon" ng-if="castType == 'telecast'"/>
 		</div>
-		<div class="cast-tile__time">{{castTime}}</div>
-		<div class="cast-tile__title">{{castTitle}}</div>
-		<!--div class="cast-tile__type">{{castTypeTitle(castType)}}</div-->
-		<div class="cast-tile__details">{{castDetails}}</div>
+		<div class="cast-tile__time typo_body_1">{{castTime}}</div>
+		<!--div class="cast-tile__title">{{castTypeTitle(castType)}}</div-->
+		<div class="cast-tile__title typo_body_2">{{castTitle}}</div>
+		<ng-transclude></ng-transclude>
 	</script>
 </body>
 </html>
